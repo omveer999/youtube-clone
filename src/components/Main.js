@@ -2,11 +2,11 @@ import ButtonList from "./ButtonList";
 import VideoContainer from "./VideoContainer";
 const Main=()=>{
     return (
-        <div className="mt-24">
-            <div className="  ">
+        <div className="">
+            <div className="mt-20  left-[100px] p-2 w-11/12 fixed bg-white ">
                <ButtonList/>
             </div>
-            <div className="mt-5">
+            <div className="mt-[150px]">
                <VideoContainer/>
             </div>
         </div>

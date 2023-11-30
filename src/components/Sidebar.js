@@ -1,24 +1,27 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Sidebar=()=>{
     const isMenuOpen=useSelector((state)=>state.app.isMenuOpen);
-    console.log("isMenuopen",isMenuOpen);
     if(!isMenuOpen)return null;
 
     return (
        
         <div className="shadow-sm w-[140px] font-roboto font-semibold  mt-3 top-16 fixed">
-            <ul className="px-2 py-4">
-                <li className="py-2">News</li>
-                <li className="py-2">Sports</li>
-                <li className="py-2">Games</li>
-                <li className="py-2" >Bhajans</li>
-                <li className="py-2">Politics</li>
-                <li className="py-2">Movies</li>
-                <li className="py-2">Webseries</li>
-                <li className="py-2">Shorts</li>
-                <li className="py-2">Music</li>
-                <li className="py-2">Podcasts</li>
+            <ul className=" py-4">
+                <li className="p-2 hover:text-blue-400"><Link to={"/"}>Home</Link></li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=trending"}>Trending</Link> </li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=trending"}>Music</Link> </li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=trending"}>Learning</Link></li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=trending"}>Shopping</Link></li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=Movies"}>Movies</Link></li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=Gaming"}>Gaming</Link></li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=News"}>News</Link></li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=Sports"}>Sports</Link></li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=Learning"}>Learning</Link></li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=Fashion & Beauty"}>Fashion & Beauty</Link></li>
+                <li className="p-2  hover:text-blue-400"><Link to={"/results?search_query=Podcasts"}>Podcasts</Link></li>
+
             </ul>
         </div>
     )
