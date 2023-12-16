@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { closeMenu } from "../utils/appSlice";
 import { useSearchParams } from "react-router-dom";
-import CommentList from "./CommentList";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import { YOUTUBE_CHANNEL_API, YOUTUBE_VIDEO_BY_ID } from "../utils/config";
@@ -111,6 +110,7 @@ const VideoWatch = () => {
             <div className="w-full flex justify-between ">
               <div className="flex">
                 <img
+                  alt="logo"
                   className="rounded-full shadow-sm w-14 "
                   src={
                     channelDetail?.items[0]?.snippet?.thumbnails?.default?.url
