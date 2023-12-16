@@ -4,7 +4,7 @@ export const YOUTUBE_VIDEO_API="https://youtube.googleapis.com/youtube/v3/videos
 
 export const YOUTUBE_RELATED_VIDEO_API="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&maxResults=10&key="+API_KEY+"&videoCategoryId=";
 
-export const YOUTUBE_SUGGESTION_KEY="http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+export const YOUTUBE_SUGGESTION_KEY="https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
 export const YOUTUBE_VIDEO_BY_ID="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key="+API_KEY+"&id=";
 

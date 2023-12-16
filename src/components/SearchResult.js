@@ -37,10 +37,9 @@ const SearchResult = () => {
         const channelTitle = video?.snippet?.channelTitle;
         const viewCount = formatNumber(video?.statistics?.viewCount);
         let obj = { url, title, channelTitle, viewCount };
-
         return (
           <div className="w-full">
-            <Link className="" key={video.id} to={`/watch?v=${video.id}`}>
+            <Link className="" key={video.id.videoId} to={`/watch?v=${video.id.videoId}`}>
               {" "}
               <HorizontalDetailedVideoCard {...obj} />
             </Link>

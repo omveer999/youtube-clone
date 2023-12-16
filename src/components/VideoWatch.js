@@ -148,10 +148,10 @@ const VideoWatch = () => {
                 </div>
               </div>
             </div>
-            <div className="whitespace-pre-wrap bg-gray-100 px-2 py-2 rounded-lg line-clamp-5 hover:line-clamp-none my-3">
-              {convertToLinksAndHashtags(
+            <div className="whitespace-pre-wrap bg-gray-100 px-2 py-2 mb-4 rounded-lg line-clamp-5 hover:line-clamp-none my-3">
+              {(videosDetail?.items[0]?.snippet?.description)?convertToLinksAndHashtags(
                 videosDetail?.items[0]?.snippet?.description
-              )}
+              ):null}
             </div>
           </div>
         </div>
